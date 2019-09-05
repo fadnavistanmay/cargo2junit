@@ -326,7 +326,7 @@ stages:
         - bash: |
             cargo test -- -Z unstable-options --format json | tee test_results_debug.json
           displayName: cargo test
-          - bash: |
+        - bash: |
             cargo build --release
           displayName: cargo build --release
         - bash: |
