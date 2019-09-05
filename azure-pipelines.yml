@@ -221,7 +221,7 @@ stages:
           # x86_64-unknown-linux-gnu:
           #   TARGET: x86_64-unknown-linux-gnu
           #   VM_IMAGE: ubuntu-16.04
-            vs2015-gnu-tar:
+          vs2015-gnu-tar:
             TARGET: x86_64-pc-windows-gnu
             TOOLS_TARGET: x86_64-pc-windows-msvc
             VM_IMAGE: vs2015-win2012r2
