@@ -188,12 +188,12 @@ jobs:
     #     jerick-z440:
     #       TARGET: x86_64-pc-windows-msvc
     #       POOL_NAME: jerick-z440
-        jerick-z440-wsl:
-          TARGET: x86_64-unknown-linux-gnu
-          POOL_NAME: jerick-z440-wsl
-          AZP_CACHING_CONTENT_FORMAT: SingleTar
-          AZP_CACHING_TAR: 1
-          CACHE_KEY_BASE: '"TAR=$(AZP_CACHING_TAR)_CACHE_SALT=$(CACHE_SALT)-$(Agent.JobName)-$(Agent.OS)-$(CHANNEL)-$(TARGET)"'
+        #jerick-z440-wsl:
+         # TARGET: x86_64-unknown-linux-gnu
+          #POOL_NAME: jerick-z440-wsl
+          #AZP_CACHING_CONTENT_FORMAT: SingleTar
+          #AZP_CACHING_TAR: 1
+          #CACHE_KEY_BASE: '"TAR=$(AZP_CACHING_TAR)_CACHE_SALT=$(CACHE_SALT)-$(Agent.JobName)-$(Agent.OS)-$(CHANNEL)-$(TARGET)"'
 
     # # hosted agents
         vs2015-gnu:
