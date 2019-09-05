@@ -385,7 +385,7 @@ stages:
 
 - stage: CacheHit
   displayName: 'CacheHit'
-  dependsOn: []
+  dependsOn: CacheMiss
   jobs:
     - job: cached
       pool:
