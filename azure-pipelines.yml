@@ -315,6 +315,7 @@ stages:
             cargo install-update -a
           displayName: Ensure cargo-installed tools are up-to-date
         - bash: |
+            export RUSTC_WRAPPER=
             rustup toolchain install $(CHANNEL)-$(TARGET)
             rustup default $(CHANNEL)-$(TARGET)
             rustup update $(CHANNEL)-$(TARGET)
@@ -386,7 +387,7 @@ stages:
 - stage: CacheHit
   displayName: 'CacheHit'
   dependsOn: CacheMiss
-  condition: true
+  condition: true # Remove this when agent is merged.
   jobs:
     - job: cached
       pool:
