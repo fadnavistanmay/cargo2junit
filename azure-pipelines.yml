@@ -181,9 +181,9 @@ stages:
       strategy:
         matrix:
         # # private agent for testing new agent code
-           tafadnavdevfab:
-             TARGET: x86_64-unknown-linux-gnu
-             POOL_NAME: tafadnavubuntu
+          tafadnavdevfab:
+            TARGET: x86_64-unknown-linux-gnu
+            POOL_NAME: tafadnavubuntu
           #jerick-z440-wsl:
             # TARGET: x86_64-unknown-linux-gnu
             #POOL_NAME: jerick-z440-wsl
