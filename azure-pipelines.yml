@@ -2,7 +2,7 @@
 
 variables:
   CHANNEL: stable
-  CACHE_SALT: 7
+  CACHE_SALT: 8
   RUSTCACHE_ROOT: $(Build.SourcesDirectory)/target
   CARGO_HOME: $(RUSTCACHE_ROOT)/rustcache/.cargo
   RUSTUP_HOME: $(RUSTCACHE_ROOT)/rustcache/.rustup
